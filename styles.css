@@ -1,0 +1,131 @@
+h1, h2 {
+    color:#b00000;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+ul{
+    font-family: 'Lato', sans-serif;
+}
+a:link {color:#00daee;}
+html{
+    cursor: none;
+}
+body{
+    background: linear-gradient(
+        #ffffff,
+        #ffc6c6);
+    color:#1b0000;
+    cursor: none;
+    margin: 30px;
+}
+.center{
+    text-align: center;
+}
+nav a{
+    color:#05BFDB;
+    transition-duration: 300ms;
+}
+nav a:hover{
+    color:#9269e4;
+    cursor: none;
+}
+nav{
+    background:linear-gradient(
+        #742323,
+        #85244e);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.taskbar{
+    display: flex;
+    justify-content: flex-end;
+}
+.contacts{
+    display: flex;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.imborder{
+    padding: 10px;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        #541263,
+        #2c4494,
+        #bc2a67,
+        #2c4494,
+        #541263);
+}
+div{
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-direction: column;
+    flex-basis: 60%;
+    flex: 1;
+}
+.col2{
+    flex-direction: column;
+    flex-basis: 40%;
+}
+.box{
+    flex-direction: column;
+    margin: 20px;
+}
+@media only screen and (max-width:800px){
+    .taskbar{display: block}
+    .contacts{display: block}
+    body{
+        margin: 20px;
+    }
+    .imborder{
+        padding: 5px;
+    }
+    .col1{
+        margin-right: 20px;
+    }
+}
+.skip{
+    background-color: black;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: -999px;
+}
+.skip:focus{
+    left: 10px;
+}
+.innercursor{
+    position: fixed;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.outercursor{
+    position: fixed;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+}
