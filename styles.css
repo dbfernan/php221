@@ -1,6 +1,11 @@
-h1, h2 {
+h1 {
     color:#b00000;
     font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    color:#b00000;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
 }
 p{
     font-family: 'Lato', sans-serif;
@@ -9,26 +14,18 @@ ul{
     font-family: 'Lato', sans-serif;
 }
 a:link {color:#00daee;}
-html{
-    cursor: none;
-}
 body{
-    background: linear-gradient(
-        #ffffff,
-        #ffc6c6);
+    background:#ffffff;
     color:#1b0000;
     cursor: none;
     margin: 30px;
 }
-.center{
-    text-align: center;
-}
 nav a{
-    color:#05BFDB;
+    color:#0000EE;
     transition-duration: 300ms;
 }
 nav a:hover{
-    color:#9269e4;
+    color:#551A8B;
     cursor: none;
 }
 nav{
@@ -39,16 +36,28 @@ nav{
     margin-bottom: 20px;
     font-family: 'Lato', sans-serif;
 }
+div{
+    font-family: 'Lato', sans-serif;
+}
+.center{
+    text-align: center;
+}
+.centered-list{
+    display: inline-block;
+    text-align: left;
+}
 .taskbar{
     display: flex;
     justify-content: flex-end;
 }
-.contacts{
-    display: flex;
-}
 img{
     max-width: 100%;
     max-height: 100%;
+}
+#truck{
+    display: block;
+    margin: 0 auto;
+    width: 700px;
 }
 .imborder{
     padding: 10px;
@@ -59,10 +68,6 @@ img{
         #bc2a67,
         #2c4494,
         #541263);
-}
-div{
-    padding: 5px;
-    font-family: 'Lato', sans-serif;
 }
 .row {
     display: flex;
@@ -106,26 +111,4 @@ div{
 }
 .skip:focus{
     left: 10px;
-}
-.innercursor{
-    position: fixed;
-    left: 10px;
-    width: 6px;
-    height: 6px;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    mix-blend-mode: difference;
-    border-radius: 50%;
-    pointer-events: none;
-}
-.outercursor{
-    position: fixed;
-    left: 10px;
-    width: 15px;
-    height: 15px;
-    transform: translate(-50%, -50%);
-    border: 1px solid white;
-    mix-blend-mode: difference;
-    border-radius: 50%;
-    pointer-events: none;
 }
