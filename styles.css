@@ -13,20 +13,17 @@ p{
 ul{
     font-family: 'Lato', sans-serif;
 }
-a:link {color:#00daee;}
 body{
     background:#ffffff;
     color:#1b0000;
-    cursor: none;
-    margin: 30px;
+    margin: 40px;
 }
-nav a{
+a{
     color:#0000EE;
     transition-duration: 300ms;
 }
-nav a:hover{
+a:hover{
     color:#551A8B;
-    cursor: none;
 }
 nav{
     background:linear-gradient(
@@ -34,9 +31,6 @@ nav{
         #85244e);
     padding: 10px;
     margin-bottom: 20px;
-    font-family: 'Lato', sans-serif;
-}
-div{
     font-family: 'Lato', sans-serif;
 }
 .center{
@@ -54,20 +48,32 @@ img{
     max-width: 100%;
     max-height: 100%;
 }
-#truck{
+#logo{
     display: block;
-    margin: 0 auto;
-    width: 700px;
+    margin: auto;
+    width: 400px;
+}
+#patient{
+    margin-top: 50px;
+    float: right;
+    width: 600px;
+}
+#boosting{
+    margin-top: 50px;
+    float: left;
+    width: 600px;
 }
 .imborder{
     padding: 10px;
     background: conic-gradient(
         from var(--gradient-angle),
-        #541263,
-        #2c4494,
-        #bc2a67,
-        #2c4494,
-        #541263);
+        #d72d271d,
+        #df705f4e,
+        #d72d271d,
+        #df705f4e,
+        #d72d271d,
+        #df705f4e,
+        #d72d271d);
 }
 .row {
     display: flex;
@@ -76,16 +82,12 @@ img{
 }
 .col1{
     flex-direction: column;
-    flex-basis: 60%;
+    flex-basis: 50%;
     flex: 1;
 }
 .col2{
     flex-direction: column;
-    flex-basis: 40%;
-}
-.box{
-    flex-direction: column;
-    margin: 20px;
+    flex-basis: 50%;
 }
 @media only screen and (max-width:800px){
     .taskbar{display: block}
@@ -95,9 +97,6 @@ img{
     }
     .imborder{
         padding: 5px;
-    }
-    .col1{
-        margin-right: 20px;
     }
 }
 .skip{
